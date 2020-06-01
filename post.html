@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Clean Blog - Start Bootstrap Theme</title>
+  <title>Rosette</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,13 +22,27 @@
   <link href="css/clean-blog.min.css" rel="stylesheet">
 
 </head>
+<style>
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
 
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
 <body>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+      <a class="navbar-brand" href="index.html">Rosette</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -36,16 +50,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="post.html">Sample Post</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="about.html">About The Team</a>
           </li>
         </ul>
       </div>
@@ -53,17 +58,14 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('img/post-bg.jpg')">
+  <header class="masthead" style="background-image: url('img/earth.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Man must explore, and this is exploration at its greatest</h1>
-            <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
-            <span class="meta">Posted by
-              <a href="#">Start Bootstrap</a>
-              on August 24, 2019</span>
+            <h1>Nature life in the era of Coronavirus.</h1>
+            <h2 class="subheading">Earth is also infected, but in a good different way.</h2>
           </div>
         </div>
       </div>
@@ -75,42 +77,86 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+          <p>Our goal is to find changes in local natural environment due to COVID-19. Because huge population relies on farming and logging in Africa, so decrease in human activity can affect the local natural habitat directly. We thought that selecting and offering the right dataset for the local scientists to help them identify any significant changes happening around their local nature would help them continue their research. We searched for different kinds of data, and selected 4 different categories of data from Nasa’s earth dataset. Among the many comparison, we found out satellite images from 2017 March 15th are most clean and visible, so all of the data for comparison with data on March 2020 after COVID-19 is compared with ones on March 15th, 2017. </p>
 
-          <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+          <p>First, we could find a significant decrease in Final Aerosol Single Scattering Albedo at 500nm in 2020 compared to 2017 on the same day. Especially in northern and southern part of Africa, there is no visibility of Aerosol on the satellite images. </p>
 
-          <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+          <div class="row">
+            <div class="column">
+              <img src="img/Blog Images/Final Aerosol Single Scattering Albedo at 500nm/FinalAerosolSingleScattAlb50_in_OMI-Aura_L3-OMAERUVd_2017m0329_v003-2017m0.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/Blog Images/Final Aerosol Single Scattering Albedo at 500nm/FinalAerosolSingleScattAlb50_in_OMI-Aura_L3-OMAERUVd_2020m0329_v003-2020m0.png" alt="Forest" style="width:100%">
+            </div>
+          </div>
 
-          <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+          <p>Second, Land-surface Temperature shows a slight change in Africa. Specifically, in Western Africa, we the color gets brighter near Kenya. However, Madagascar’s land temperature is abnormally high compared to 2017, this was due to wildfire in the south. </p>
 
-          <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+          <div class="row">
+            <div class="column">
+              <img src="img/Blog Images/Monthly daytime 3min CMG Land-surface Temperature/LST_Day_CMG_in_MYD11C3.A2017060.006.2017094160714.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/Blog Images/Monthly daytime 3min CMG Land-surface Temperature/LST_Day_CMG_in_MYD11C3.A2020061.006.2020099122015.png" alt="Forest" style="width:100%">
+            </div>
+          </div>
 
-          <h2 class="section-heading">The Final Frontier</h2>
+          <p>Third, number of cases of thermal anomaly changes varies among different regions in Africa, but overall numbers of cases decreased as you can see on the graph. The fire radiative power in 2017 is a lot higher overall than 2020. However, in middle Africa, the fire anomaly index is concentrated compared to 2017. </p>
+          
+          <div class="row">
+            <div class="column">
+              <img src="img/Blog Images/Fire Radiative Power/FP_power_in_MYD14.A2017089.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/Blog Images/Fire Radiative Power/FP_power_in_MYD14.A2020089 (2).png" alt="Forest" style="width:100%">
+            </div>
+          </div>
 
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+          <div class="row">
+            <div class="column">
+              <img src="img/Blog Images/Fire Radiative Power/FP_power_in_MYD14.A2017089 (2).png" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/Blog Images/Fire Radiative Power/FP_power_in_MYD14.A2020089.png" alt="Forest" style="width:100%">
+            </div>
+          </div>
 
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+          <p>Fourth, total aerosol distribution of higher level of angstrom parameter [470-870nm] is greatly decreased in southern Africa in 2020. It means there are less fine air particle which can be produced from smoke from car or factory in the region.</p>
+          
+          <div class="row">
+            <div class="column">
+              <img src="img/Blog Images/Total Aerosol Angstrom parameter[470-870nm]/TOTANGSTR_in_MERRA2_400.tavgM_2d_aer_Nx.201703.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/Blog Images/Total Aerosol Angstrom parameter[470-870nm]/TOTANGSTR_in_MERRA2_400.tavgM_2d_aer_Nx.202003.png" alt="Forest" style="width:100%">
+            </div>
+          </div>
 
-          <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
+          <p>Fifth, the Global daily 9km Net Ecosystem Exchange(mean) is decreased in 2020 compared to 2017 which means there are more amount of carbon produced by heterotrophic respiration in this year. This can be related to increase in wildlife activity as well as less amount of net primary production as well due to less carbon output in local environment.</p>
+          
+          <div class="row">
+            <div class="column">
+              <img src="img/Blog Images/Global daily 9km Net Ecosystem Exchange (mean)/nee_mean_in_SMAP_L4_C_mdl_20170315T000000_Vv4040_001.png" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/Blog Images/Global daily 9km Net Ecosystem Exchange (mean)/nee_mean_in_SMAP_L4_C_mdl_20200315T000000_Vv4040_001.png" alt="Forest" style="width:100%">
+            </div>
+          </div>
 
-          <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
+          <p>The problem we face with lack of local observatory data can be solved by utilizing satellite data and nasa earth data. Local Scientists can access to these data mentioned above to get near real-time data to keep monitoring possible anomalies and changes in their local environment due to decrease in human activity during COVID-19 pandemic. Not only scientists can benefit from these data, but also citizens can use these easily accessible data to educate themselves around the world. </p>
+          
+          <p>However, the mere amount of data is too big to be processed without prior knowledge about the topic. Therefore, we propose to build an app that only provides users with data directly related to their chosen topic. As our challenge is about possible changes in natural environment due to COVID-19, we propose our app to include specifically 5 categories which are:</p>
+          
+          <ol>
+            <li>Final Aerosol Single Scattering Albedo at 500nm</li>
+            <li>Land-surface Temperature</li>
+            <li>thermal anomaly</li>
+            <li>total aerosol distribution of higher level of angstrom parameter [470-870nm]</li>
+            <li>Global daily 9km Net Ecosystem Exchange(mean).</li>
+          </ol>
 
-          <h2 class="section-heading">Reaching for the Stars</h2>
+          <p>Under this category, we use NASA open API and near real-time satellite data to provide users with latest as well as largest dataset. In this way, not only professionals but also citizens with no scientific background can get access to the data and educate themselves. We hope for the better future where everyone can benefit from the readily available data and prepare for unpredictable future especially in times like COVID-19 crisis.</p>
 
-          <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-
-          <a href="#">
-            <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
-          </a>
-          <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-          <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-
-          <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-
-          <p>Placeholder text by
-            <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
-            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
         </div>
       </div>
     </div>
@@ -125,7 +171,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <ul class="list-inline text-center">
             <li class="list-inline-item">
-              <a href="#">
+              <a href="https://twitter.com/Rosette_nasaapp">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -133,15 +179,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
+              <a href="https://github.com/Afifibytes/rosette">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -149,7 +187,6 @@
               </a>
             </li>
           </ul>
-          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
         </div>
       </div>
     </div>
